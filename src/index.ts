@@ -10,9 +10,9 @@ const getConsoleLogJob = (textToOutput: string, timeToProcess?: number): Job => 
   }, 
 });
 
-const firstJob: Job = getConsoleLogJob('first job', 100);
-const secondJob: Job = getConsoleLogJob('second job', 1000);
-const thirdJob: Job = getConsoleLogJob('third job');
+const firstJob: Job = getConsoleLogJob('first job', 1000); 
+const secondJob: Job = getConsoleLogJob('second job', 100);
+const thirdJob: Job = getConsoleLogJob('third job', 300);
 
 jobRunner.run(firstJob);
 jobRunner.run(secondJob);
